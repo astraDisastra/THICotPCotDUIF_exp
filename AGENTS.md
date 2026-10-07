@@ -1,6 +1,10 @@
 # Agent notes
 
-v0.3 as amended by v0.31 is the design. v0.2 is history. The core never touches a pin; there is no pin-level bypass. Goals and demo order are `knowledgebase/doctrine.md`: familiar protocols must work and are not the thing to optimize. Read `knowledgebase/README.md` before changing RTL, firmware, models, the study, or the datasheet.
+v0.3 as amended by v0.31 is the reference design. v0.2 is history. In the reference design, the core never touches a pin; there is no pin-level bypass. Goals and demo order are `knowledgebase/doctrine.md`: familiar protocols must work and are not the thing to optimize. Read `knowledgebase/README.md` before changing RTL, firmware, models, the study, or the datasheet.
+
+## Experiments
+
+[knowledgebase/experiments.md](knowledgebase/experiments.md) governs experimental work in this fork and takes precedence over reference-design mechanism restrictions there. Agents may change the reservoir, preprocessing, readout, interfaces, controller, and total system architecture within an assigned experiment. No approval is needed solely because an experiment departs from v0.31 or the existing emulator. Keep the work tied to configurable waveform recognition and response, with explicit assumptions and measured timing, rejection, and resource costs. Adopting a result into the reference design is a separate decision.
 
 ## Frozen template
 
