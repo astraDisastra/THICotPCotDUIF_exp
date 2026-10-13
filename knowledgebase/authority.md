@@ -6,6 +6,8 @@
 
 Spec files are append-only. Never edit a released version; a change is a new delta document (see [versioning.md](versioning.md)).
 
+**External protocol behavior** for UART, I2C, USB low-speed, and 10 Mbit Ethernet is documented in [protocols](protocols/README.md), authorized by the user on 12 October 2026. Those named sources govern protocol requirements; they do not change reference-design mechanisms or establish measured conformance. Record a discrepancy explicitly if a model or design assumption conflicts with a source. Documentation availability and implementation/hardware qualification are separate statuses.
+
 **Contest requirements** are the filed announcement in [competition/](competition/README.md): process, 6×4 tiles, deadline, open source, and the area budget stated there. v0.3 section 2 is a compliance matrix, not the announcement. If they disagree on a contest rule, the filed announcement wins.
 
 **Goals, success, and demo order** are [doctrine.md](doctrine.md). Where an older pitch treats a bake-off against a normal decoder as the point of the chip, doctrine wins. Reference implementation mechanisms (no pin path, symbol events, reservoir, reflex, both listeners) stay v0.31 until a new design delta adopts a change. An experiment's question and success criteria follow [experiments.md](experiments.md), not the reference demo checklist.

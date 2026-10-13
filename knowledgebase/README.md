@@ -17,6 +17,7 @@ Humans start at [tldr.md](tldr.md). It is the plain-language map of the referenc
 9. [phases.md](phases.md) — project gates and the artifact each one requires.
 10. [versioning.md](versioning.md) — spec versioning and the git branch/tag scheme.
 11. [placeholders/README.md](placeholders/README.md) — documents that are required and not here.
+12. [protocols/README.md](protocols/README.md) — checked UART, I2C, USB low-speed, and 10 Mbit Ethernet behavior, source register, and model-assumption audit; read before implementing those protocols.
 
 ## Sources
 
@@ -29,4 +30,4 @@ For the reference implementation, architecture pages restate v0.3 as amended by 
 
 ## Missing documents
 
-Hardware and protocol implementation notes that the design still needs are stubs under [placeholders/](placeholders/). Leave a stub at `status: missing` until the team files a checked source. Do not search the web and commit a datasheet, a standard, or a tutorial in its place.
+Unresolved hardware, implementation, and verification evidence is tracked under [placeholders/](placeholders/). The user-authorized [protocol references](protocols/README.md) file checked external behavior for UART, I2C, USB low-speed, and 10 Mbit Ethernet. Their placeholders distinguish documentation acquired from implementation evidence still missing. Follow the source register's provenance and redistribution rules; do not infer hardware compliance or a passed gate from a source citation. Other gaps remain unresolved.

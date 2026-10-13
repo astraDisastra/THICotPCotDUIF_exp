@@ -313,7 +313,7 @@ From 5 Jan to 18 Jan, fix template precheck and gate-level failures. Do not add 
 - `src/`: Verilog the chip is built from. Template top stays put.
 - `test/`: cocotb. This is the template's test entry point.
 - `work/model/`: Python golden model. `work/study/`: the reservoir experiment. `work/fw/`: programs and weight files. `work/formal/`: proofs. `work/verification/`: logs.
-- `knowledgebase/placeholders/`: a list of documents we still need (pad behavior, real board clock, protocol framing details). They stay empty until someone files a real source. Do not paste a random datasheet in to feel productive.
+- `knowledgebase/protocols/`: checked UART, I2C, USB low-speed, and 10 Mbit Ethernet references, source links, and an audit of model assumptions. `knowledgebase/placeholders/` tracks remaining evidence such as pads, board clock, implementations, and qualification; a filed protocol source does not resolve those gaps.
 
 ## Glossary
 

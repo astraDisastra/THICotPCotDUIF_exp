@@ -14,7 +14,7 @@ Models, the reservoir study, firmware, and formal notes live under `work/`. Synt
 
 ## Evidence
 
-Items marked **[EST]** or **[VERIFY]**, and v0.3 section 11, are not specifications. Do not fetch external hardware or protocol documents. Required gaps are `knowledgebase/placeholders/` with `status: missing`.
+Items marked **[EST]** or **[VERIFY]**, and v0.3 section 11, are not specifications. Checked external sources for UART, I2C, USB low-speed, and 10 Mbit Ethernet are authorized under `knowledgebase/protocols/README.md`; read those guides and their source register before implementing protocol behavior. Source facts, project choices, and measured implementation evidence must remain distinct. Retain original documents only with affirmative redistribution permission and checksums. Other external hardware/protocol acquisition remains outside this authorization. Unresolved implementation and hardware gaps stay in `knowledgebase/placeholders/` with `status: missing`; acquiring documentation does not pass a gate.
 
 `clock_hz` stays 0 until post-route STA passes. Do not claim I2C or USB electrical compliance, on-chip training, Ethernet on silicon, or "formally verified" anything before the proof artifact is filed.
 
